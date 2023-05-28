@@ -1,14 +1,13 @@
 body {
   padding: 0;
   margin: 0;
-}
-body header {
-  width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.5))), url(img/back.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(img/back.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100%;
+}
+body header {
+  width: 100%;
   height: 100vh;
 }
 body header #main {
@@ -18,15 +17,9 @@ body header #main {
   bottom: 0;
   right: 0;
   z-index: 999;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.8);
 }
 body header #main #mainImg {
@@ -83,7 +76,6 @@ body header .container .row h1 {
   font-weight: 600;
 }
 body header .container .row h1 .name {
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
 }
@@ -93,7 +85,6 @@ body header .container .row h1 .name:hover {
 body header .container .row h1 .sur {
   color: springgreen !important;
   cursor: pointer;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 body header .container .row h1 .sur:hover {
@@ -101,11 +92,9 @@ body header .container .row h1 .sur:hover {
 }
 body header .container .row #animate-this {
   overflow: hidden;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   white-space: nowrap;
-  -webkit-animation: myAnimate 2s steps(20) forwards, blink 1s infinite;
-          animation: myAnimate 2s steps(20) forwards, blink 1s infinite;
+  animation: myAnimate 2s steps(20) forwards, blink 1s infinite;
   border-right: 0.15rem solid #fcfffe;
   font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
@@ -117,24 +106,19 @@ body header .container .row .lorem {
   font-weight: 600;
 }
 body header .container .row #pr-1 {
-  -webkit-animation: myMove-1 3s linear;
-          animation: myMove-1 3s linear;
+  animation: myMove-1 3s linear;
 }
 body header .container .row #pr-2 {
-  -webkit-animation: myMove-2 3s linear;
-          animation: myMove-2 3s linear;
+  animation: myMove-2 3s linear;
 }
 body header .container .row #pr-3 {
-  -webkit-animation: myMove-3 3s linear;
-          animation: myMove-3 3s linear;
+  animation: myMove-3 3s linear;
 }
 body header .container .row #pr-4 {
-  -webkit-animation: myMove-4 3s linear;
-          animation: myMove-4 3s linear;
+  animation: myMove-4 3s linear;
 }
 body header .container .row #pr-5 {
-  -webkit-animation: myMove-5 3s linear;
-          animation: myMove-5 3s linear;
+  animation: myMove-5 3s linear;
 }
 body header .container .row label {
   color: white;
@@ -175,17 +159,10 @@ body header .container .row .col-md .overlay1, body header .container .row .col-
   right: 0;
   opacity: 0;
   width: 100%;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   color: white;
   font-size: 20px;
@@ -198,29 +175,12 @@ body header #logo-image {
   width: 100%;
 }
 
-@-webkit-keyframes myMove-1 {
-  from {
-    width: 0;
-  }
-  to {
-    width: 90%;
-  }
-}
-
 @keyframes myMove-1 {
   from {
     width: 0;
   }
   to {
     width: 90%;
-  }
-}
-@-webkit-keyframes myMove-2 {
-  from {
-    width: 0;
-  }
-  to {
-    width: 75%;
   }
 }
 @keyframes myMove-2 {
@@ -231,14 +191,6 @@ body header #logo-image {
     width: 75%;
   }
 }
-@-webkit-keyframes myMove-3 {
-  from {
-    width: 0;
-  }
-  to {
-    width: 50%;
-  }
-}
 @keyframes myMove-3 {
   from {
     width: 0;
@@ -247,28 +199,12 @@ body header #logo-image {
     width: 50%;
   }
 }
-@-webkit-keyframes myMove-4 {
-  from {
-    width: 0;
-  }
-  to {
-    width: 65%;
-  }
-}
 @keyframes myMove-4 {
   from {
     width: 0;
   }
   to {
     width: 65%;
-  }
-}
-@-webkit-keyframes myMove-5 {
-  from {
-    width: 0;
-  }
-  to {
-    width: 40%;
   }
 }
 @keyframes myMove-5 {
@@ -280,6 +216,9 @@ body header #logo-image {
   }
 }
 @media screen and (max-width: 770px) {
+  #main #mainImg {
+    width: 100% !important;
+  }
   .row h1 {
     font-size: 40px !important;
   }
@@ -393,28 +332,12 @@ body header #logo-image {
     padding-bottom: 120px !important;
   }
 }
-@-webkit-keyframes myAnimate {
-  from {
-    width: 0;
-  }
-  to {
-    width: 19ch;
-  }
-}
 @keyframes myAnimate {
   from {
     width: 0;
   }
   to {
     width: 19ch;
-  }
-}
-@-webkit-keyframes blink {
-  from {
-    border-color: transparent;
-  }
-  to {
-    border-color: #f9fbfa;
   }
 }
 @keyframes blink {
@@ -424,4 +347,4 @@ body header #logo-image {
   to {
     border-color: #f9fbfa;
   }
-}
+}/*# sourceMappingURL=style.css.map */
