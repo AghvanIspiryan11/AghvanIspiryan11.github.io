@@ -3,6 +3,7 @@ $(document).ready(function(){
     $('#cont-3').hide()
     $('#cont-4').hide()
     $('#cont-5').hide()
+    var $header = $('header')
     $('#btn-1').click(function(){
         $('#cont-1').hide(function(){
              $("#cont-2").fadeIn(200)
@@ -30,10 +31,14 @@ $(document).ready(function(){
         $('#cont-3').hide(function(){
             $("#cont-2").fadeIn(200)
        })
+       
     })
     $("#btn-next-1").click(function(){
         $('#cont-3').hide(function(){
             $("#cont-4").fadeIn(200)
+       })
+       $header.css({
+        height: '100vh ',
        })
     })
     $("#back-1").click(function(){
